@@ -1,0 +1,136 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    background-color: #34495E;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #FF6347;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.weekdays span {
+    padding: 10px;
+    background-color: #1ABC9C;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.weekdays span:hover {
+    background-color: #16A085;
+}
+
+.habit-day {
+    margin-bottom: 40px;
+    background-color: #2C3E50;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.habit-day h3 {
+    font-size: 1.8rem;
+    color: #FF6347;
+    margin-bottom: 15px;
+}
+
+.habit-label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #ECF0F1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #7F8C8D;
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF6347;
+    border-color: #FF6347;
+}
+
+input[type="checkbox"]:checked[data-state="crossed"] {
+    text-decoration: line-through;
+    background-color: #E74C3C;
+    border-color: #E74C3C;
+}
+
+label:hover {
+    background-color: #95A5A6;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.6);
+}
+
+.habit-day:hover {
+    background-color: #1ABC9C;
+    transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #FF6347;
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+button {
+    background-color: #FF6347;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #E74C3C;
+}
